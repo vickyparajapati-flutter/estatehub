@@ -33,8 +33,8 @@ export default function AddPropertyPage() {
     amenities: ['Parking', 'Lift', 'Gym', 'Swimming Pool', 'Garden', 'Security', 'Power Backup', 'Balcony'],
     imageUrl: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80',
     ownerName: currentUser?.name || 'Rahul Sharma',
-    phone: '+91 98290 12345',
-    email: currentUser?.email || 'rahul.sharma@estatehub.com'
+    phone: '+91 6375521991',
+    email: currentUser?.email || 'hello@aianthro.com'
   });
 
   const ALL_AMENITIES = ['Parking', 'Lift', 'Gym', 'Swimming Pool', 'Garden', 'Security', 'Power Backup', 'Balcony', 'Modular Kitchen', 'Clubhouse'];

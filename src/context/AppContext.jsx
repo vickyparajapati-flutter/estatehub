@@ -131,9 +131,9 @@ export const AppProvider = ({ children }) => {
         experience: '5+ Years',
         rating: 4.8,
         reviewCount: 12,
-        phone: '+91 98290 12345',
-        whatsapp: '+919829012345',
-        email: currentUser?.email || 'rahul.sharma@estatehub.com',
+        phone: '+91 6375521991',
+        whatsapp: '+916375521991',
+        email: currentUser?.email || 'hello@aianthro.com',
         image: currentUser?.avatar || 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80',
         location: `${newProp.city}, ${newProp.state}`
       }

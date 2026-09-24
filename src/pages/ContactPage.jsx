@@ -58,7 +58,7 @@ export default function ContactPage() {
               <div className="p-3 rounded-2xl bg-blue-100 text-blue-600"><Phone className="w-5 h-5" /></div>
               <div>
                 <div className="text-xs text-slate-400 font-bold uppercase">Customer Support</div>
-                <div className="text-sm font-extrabold text-slate-900">+91 (141) 270-9000</div>
+                <div className="text-sm font-extrabold text-slate-900">+91 6375521991</div>
               </div>
             </div>
 
@@ -66,7 +66,7 @@ export default function ContactPage() {
               <div className="p-3 rounded-2xl bg-blue-100 text-blue-600"><Mail className="w-5 h-5" /></div>
               <div>
                 <div className="text-xs text-slate-400 font-bold uppercase">Email Inquiry</div>
-                <div className="text-sm font-extrabold text-slate-900">support@estatehub.com</div>
+                <div className="text-sm font-extrabold text-slate-900">hello@aianthro.com</div>
               </div>
             </div>
 
@@ -91,7 +91,7 @@ export default function ContactPage() {
             <h4 className="font-bold text-base text-white">Instant WhatsApp Connect</h4>
             <p className="text-xs text-slate-400">Speak directly with an available on-duty agent right now.</p>
             <a
-              href="https://wa.me/919829012345"
+              href="https://wa.me/916375521991"
               target="_blank"
               rel="noreferrer"
               className="w-full py-3 rounded-xl bg-emerald-500 text-white font-bold text-xs flex items-center justify-center gap-2 hover:bg-emerald-600 shadow-md"

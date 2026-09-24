@@ -105,8 +105,8 @@ export default function PropertyBrochureModal({ property, isOpen, onClose }) {
               <span className="block text-[11px] text-slate-400">{property.agent?.role}</span>
             </div>
             <div className="text-right">
-              <span className="block font-bold text-white">{property.agent?.phone || '+91 98290 12345'}</span>
-              <span className="block text-[11px] text-slate-400">{property.agent?.email}</span>
+              <span className="block font-bold text-white">{property.agent?.phone || '+91 6375521991'}</span>
+              <span className="block text-[11px] text-slate-400">{property.agent?.email || 'hello@aianthro.com'}</span>
             </div>
           </div>
 

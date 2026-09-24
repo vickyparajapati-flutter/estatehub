@@ -32,10 +32,10 @@ export default function Footer() {
 
             <div className="space-y-2 text-sm pt-2">
               <div className="flex items-center gap-2 text-slate-300">
-                <Phone className="w-4 h-4 text-blue-500" /> +91 (141) 270-9000
+                <Phone className="w-4 h-4 text-blue-500" /> +91 6375521991
               </div>
               <div className="flex items-center gap-2 text-slate-300">
-                <Mail className="w-4 h-4 text-blue-500" /> support@estatehub.com
+                <Mail className="w-4 h-4 text-blue-500" /> hello@aianthro.com
               </div>
               <div className="flex items-center gap-2 text-slate-300">
                 <MapPin className="w-4 h-4 text-blue-500" /> Malviya Nagar, Jaipur, Rajasthan 302017
