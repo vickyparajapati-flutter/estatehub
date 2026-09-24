@@ -1,0 +1,641 @@
+// High-quality stock photography from Unsplash for realistic real estate demo
+export const INITIAL_PROPERTIES = [
+  {
+    id: "luxury-3-bhk-apartment-jaipur",
+    title: "Luxury 3 BHK Apartment",
+    slug: "luxury-3-bhk-apartment-jaipur",
+    city: "Jaipur",
+    state: "Rajasthan",
+    locality: "Malviya Nagar",
+    address: "Plot 14, Apex Tower, Malviya Nagar, Jaipur, Rajasthan 302017",
+    price: "₹85 Lakhs",
+    rawPrice: 8500000,
+    pricePerSqFt: "₹4,594 / sq.ft",
+    listingType: "For Sale",
+    propertyType: "Apartment",
+    bedrooms: 3,
+    bathrooms: 3,
+    area: 1850,
+    parking: 2,
+    floor: "8th Floor (out of 14)",
+    facing: "East Facing",
+    furnishing: "Fully Furnished",
+    builtYear: 2022,
+    ownership: "Freehold",
+    verified: true,
+    featured: true,
+    status: "Published",
+    views: 1420,
+    inquiriesCount: 18,
+    createdDate: "2026-02-10",
+    propertyId: "EH-JPR-9041",
+    agentId: "agent-1",
+    agent: {
+      id: "agent-1",
+      name: "Rahul Sharma",
+      role: "Real Estate Consultant",
+      experience: "8+ Years",
+      rating: 4.8,
+      reviewCount: 38,
+      phone: "+91 98290 12345",
+      whatsapp: "+919829012345",
+      email: "rahul.sharma@estatehub.com",
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80",
+      location: "Jaipur, Rajasthan",
+      propertiesCount: 42
+    },
+    images: [
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80", // Exterior
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80", // Living Room
+      "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1200&q=80", // Bedroom
+      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80", // Kitchen
+      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80", // Bathroom
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"  // Balcony/View
+    ],
+    description: "Experience modern luxury in the heart of Malviya Nagar, Jaipur. This premium 3 BHK apartment boasts floor-to-ceiling double-glazed windows with panoramic city views, Italian marble flooring, a modular German kitchen, and private balconies. Residents enjoy access to world-class amenities including an infinity swimming pool, rooftop lounge, fully equipped fitness club, and 24/7 multi-tier security.",
+    amenities: [
+      "Modular Kitchen", "Balcony", "Parking", "Lift", "Security", "Power Backup", "Swimming Pool", "Gym", "Garden", "Clubhouse"
+    ]
+  },
+  {
+    id: "modern-villa-with-garden-gurgaon",
+    title: "Modern Villa with Garden",
+    slug: "modern-villa-with-garden-gurgaon",
+    city: "Gurgaon",
+    state: "Haryana",
+    locality: "Golf Course Road",
+    address: "Villa 22, Grand Enclave, Golf Course Road, Sector 54, Gurgaon",
+    price: "₹1.85 Crore",
+    rawPrice: 18500000,
+    pricePerSqFt: "₹5,781 / sq.ft",
+    listingType: "For Sale",
+    propertyType: "Villa",
+    bedrooms: 4,
+    bathrooms: 5,
+    area: 3200,
+    parking: 3,
+    floor: "G + 2 Floors",
+    facing: "North-East Facing",
+    furnishing: "Semi-Furnished",
+    builtYear: 2023,
+    ownership: "Freehold",
+    verified: true,
+    featured: true,
+    status: "Published",
+    views: 2150,
+    inquiriesCount: 29,
+    createdDate: "2026-01-18",
+    propertyId: "EH-GGN-7812",
+    agentId: "agent-2",
+    agent: {
+      id: "agent-2",
+      name: "Priya Mehta",
+      role: "Luxury Property Specialist",
+      experience: "6+ Years",
+      rating: 4.9,
+      reviewCount: 44,
+      phone: "+91 98100 67890",
+      whatsapp: "+919810067890",
+      email: "priya.mehta@estatehub.com",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      location: "Gurgaon, Haryana",
+      propertiesCount: 35
+    },
+    images: [
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80", // Exterior Villa
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80", // Living Room
+      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80", // Kitchen
+      "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1200&q=80", // Garden/Pool
+      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80"  // Master Suite
+    ],
+    description: "An architectural masterpiece nestled in Gurgaon's most prestigious gated community. This triplex luxury villa features a private manicured garden, personal swimming pool, smart home automation, high ceilings, and double height living room. Designed for executive living with separate servant quarters and 3 dedicated covered parking bays.",
+    amenities: [
+      "Swimming Pool", "Garden", "Parking", "Security", "Power Backup", "Gym", "Balcony", "Modular Kitchen", "Solar Panels"
+    ]
+  },
+  {
+    id: "premium-2-bhk-apartment-mumbai",
+    title: "Premium 2 BHK Apartment",
+    slug: "premium-2-bhk-apartment-mumbai",
+    city: "Mumbai",
+    state: "Maharashtra",
+    locality: "Bandra West",
+    address: "12th Floor, Ocean View Heights, Bandra West, Mumbai, Maharashtra 400050",
+    price: "₹1.25 Crore",
+    rawPrice: 12500000,
+    pricePerSqFt: "₹11,904 / sq.ft",
+    listingType: "For Sale",
+    propertyType: "Apartment",
+    bedrooms: 2,
+    bathrooms: 2,
+    area: 1050,
+    parking: 1,
+    floor: "12th Floor (out of 22)",
+    facing: "West Facing (Sea View)",
+    furnishing: "Fully Furnished",
+    builtYear: 2021,
+    ownership: "Co-op Society",
+    verified: true,
+    featured: true,
+    status: "Published",
+    views: 3100,
+    inquiriesCount: 45,
+    createdDate: "2026-02-01",
+    propertyId: "EH-MUM-5421",
+    agentId: "agent-3",
+    agent: {
+      id: "agent-3",
+      name: "Vikram Malhotra",
+      role: "Senior Real Estate Director",
+      experience: "10+ Years",
+      rating: 4.7,
+      reviewCount: 52,
+      phone: "+91 98200 45678",
+      whatsapp: "+919820045678",
+      email: "vikram.m@estatehub.com",
+      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80",
+      location: "Mumbai, Maharashtra",
+      propertiesCount: 58
+    },
+    images: [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=80"
+    ],
+    description: "Breathtaking Arabian Sea views meet sophisticated modern design in Bandra West. Fully furnished with designer furniture, fully integrated kitchen appliances, intelligent lighting system, and acoustic soundproofing. Minutes away from Bandstand, top schools, gourmet restaurants, and financial hubs.",
+    amenities: [
+      "Lift", "Security", "Power Backup", "Gym", "Balcony", "Modular Kitchen", "Parking", "Intercom"
+    ]
+  },
+  {
+    id: "spacious-family-home-bangalore",
+    title: "Spacious Family Home",
+    slug: "spacious-family-home-bangalore",
+    city: "Bangalore",
+    state: "Karnataka",
+    locality: "Indiranagar",
+    address: "4th Main, 10th Cross, 1st Stage, Indiranagar, Bangalore, Karnataka 560038",
+    price: "₹95 Lakhs",
+    rawPrice: 9500000,
+    pricePerSqFt: "₹4,318 / sq.ft",
+    listingType: "For Sale",
+    propertyType: "House",
+    bedrooms: 3,
+    bathrooms: 3,
+    area: 2200,
+    parking: 2,
+    floor: "Independent House (2 Floors)",
+    facing: "North Facing",
+    furnishing: "Semi-Furnished",
+    builtYear: 2020,
+    ownership: "Freehold",
+    verified: true,
+    featured: true,
+    status: "Published",
+    views: 1890,
+    inquiriesCount: 22,
+    createdDate: "2026-02-14",
+    propertyId: "EH-BLR-3312",
+    agentId: "agent-4",
+    agent: {
+      id: "agent-4",
+      name: "Ananya Roy",
+      role: "Residential Consultant",
+      experience: "5+ Years",
+      rating: 4.9,
+      reviewCount: 29,
+      phone: "+91 98450 11223",
+      whatsapp: "+919845011223",
+      email: "ananya.roy@estatehub.com",
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80",
+      location: "Bangalore, Karnataka",
+      propertiesCount: 29
+    },
+    images: [
+      "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1200&q=80"
+    ],
+    description: "Charming independent family home surrounded by lush greenery in Prime Indiranagar. Features teakwood doors, expansive private terrace garden, dedicated study room, solar water heating, rainwater harvesting, and covered dual car park.",
+    amenities: [
+      "Garden", "Parking", "Balcony", "Modular Kitchen", "Power Backup", "Solar Panels", "Security"
+    ]
+  },
+  {
+    id: "commercial-office-space-noida",
+    title: "Commercial Office Space",
+    slug: "commercial-office-space-noida",
+    city: "Noida",
+    state: "Uttar Pradesh",
+    locality: "Sector 62",
+    address: "Tower B, Cyber Tech Park, Sector 62, Noida, Uttar Pradesh 201309",
+    price: "₹1.10 Crore",
+    rawPrice: 11000000,
+    pricePerSqFt: "₹7,333 / sq.ft",
+    listingType: "For Sale",
+    propertyType: "Office",
+    bedrooms: 0,
+    bathrooms: 2,
+    area: 1500,
+    parking: 4,
+    floor: "5th Floor (out of 18)",
+    facing: "North-West",
+    furnishing: "Fully Furnished",
+    builtYear: 2021,
+    ownership: "Leasehold",
+    verified: true,
+    featured: true,
+    status: "Published",
+    views: 1250,
+    inquiriesCount: 14,
+    createdDate: "2026-02-05",
+    propertyId: "EH-NDA-6620",
+    agentId: "agent-5",
+    agent: {
+      id: "agent-5",
+      name: "Rajesh Verma",
+      role: "Commercial Property Advisor",
+      experience: "12+ Years",
+      rating: 4.8,
+      reviewCount: 61,
+      phone: "+91 98111 88990",
+      whatsapp: "+919811188990",
+      email: "rajesh.v@estatehub.com",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80",
+      location: "Delhi NCR",
+      propertiesCount: 64
+    },
+    images: [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80"
+    ],
+    description: "Grade-A IT office space fully fitted with 25 workstations, 2 executive cabins, 10-seater conference room, cafeteria corner, high-speed fiber internet infrastructure, and 100% DG power backup. Ready for immediate corporate plug & play.",
+    amenities: [
+      "Power Backup", "Lift", "Security", "Parking", "Cafeteria", "Fire Safety", "Central AC"
+    ]
+  },
+  {
+    id: "luxury-penthouse-delhi",
+    title: "Luxury Penthouse",
+    slug: "luxury-penthouse-delhi",
+    city: "Delhi",
+    state: "Delhi",
+    locality: "Vasant Vihar",
+    address: "Penthouse A, Royal Crest, Vasant Vihar, New Delhi 110057",
+    price: "₹2.40 Crore",
+    rawPrice: 24000000,
+    pricePerSqFt: "₹8,000 / sq.ft",
+    listingType: "For Sale",
+    propertyType: "Apartment",
+    bedrooms: 4,
+    bathrooms: 4,
+    area: 3000,
+    parking: 3,
+    floor: "Top Floor (15th Floor)",
+    facing: "South-East Facing",
+    furnishing: "Fully Furnished",
+    builtYear: 2023,
+    ownership: "Freehold",
+    verified: true,
+    featured: true,
+    status: "Published",
+    views: 4200,
+    inquiriesCount: 36,
+    createdDate: "2026-01-30",
+    propertyId: "EH-DEL-1002",
+    agentId: "agent-5",
+    agent: {
+      id: "agent-5",
+      name: "Rajesh Verma",
+      role: "Commercial Property Advisor",
+      experience: "12+ Years",
+      rating: 4.8,
+      reviewCount: 61,
+      phone: "+91 98111 88990",
+      whatsapp: "+919811188990",
+      email: "rajesh.v@estatehub.com",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80",
+      location: "Delhi NCR",
+      propertiesCount: 64
+    },
+    images: [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80"
+    ],
+    description: "An exclusive sky mansion overlooking diplomat enclaves. Private rooftop jacuzzi, private elevator access directly into the foyer, expansive floor-to-ceiling glass walls, central VRV air conditioning, and bespoke imported marble finishes.",
+    amenities: [
+      "Swimming Pool", "Garden", "Balcony", "Parking", "Lift", "Security", "Power Backup", "Gym", "Modular Kitchen", "Clubhouse"
+    ]
+  },
+  {
+    id: "scenic-lakeside-villa-pune",
+    title: "Scenic Lakeside Villa",
+    slug: "scenic-lakeside-villa-pune",
+    city: "Pune",
+    state: "Maharashtra",
+    locality: "Koregaon Park",
+    address: "Lane 7, Palm Grove, Koregaon Park, Pune, Maharashtra 411001",
+    price: "₹1.45 Crore",
+    rawPrice: 14500000,
+    pricePerSqFt: "₹5,370 / sq.ft",
+    listingType: "For Sale",
+    propertyType: "Villa",
+    bedrooms: 3,
+    bathrooms: 3,
+    area: 2700,
+    parking: 2,
+    floor: "G + 1 Floor",
+    facing: "East Facing",
+    furnishing: "Semi-Furnished",
+    builtYear: 2022,
+    ownership: "Freehold",
+    verified: true,
+    featured: false,
+    status: "Published",
+    views: 1100,
+    inquiriesCount: 16,
+    createdDate: "2026-02-12",
+    propertyId: "EH-PNE-8819",
+    agentId: "agent-6",
+    agent: {
+      id: "agent-6",
+      name: "Sneha Kapoor",
+      role: "Luxury Estates Specialist",
+      experience: "7+ Years",
+      rating: 4.9,
+      reviewCount: 31,
+      phone: "+91 98220 33445",
+      whatsapp: "+919822033445",
+      email: "sneha.kapoor@estatehub.com",
+      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+      location: "Pune, Maharashtra",
+      propertiesCount: 31
+    },
+    images: [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?auto=format&fit=crop&w=1200&q=80"
+    ],
+    description: "Nestled in Pune's trendiest neighborhood, this boutique villa features high ceilings, private manicured lawn, rooftop deck, and serene natural surroundings. Ideal for families and creative professionals.",
+    amenities: [
+      "Garden", "Parking", "Balcony", "Security", "Power Backup", "Modular Kitchen"
+    ]
+  },
+  {
+    id: "skyline-view-2bhk-rent-hyderabad",
+    title: "Skyline View 2 BHK Apartment",
+    slug: "skyline-view-2bhk-rent-hyderabad",
+    city: "Hyderabad",
+    state: "Telangana",
+    locality: "Gachibowli",
+    address: "Block C, Financial District Residency, Gachibowli, Hyderabad 500032",
+    price: "₹45,000 / mo",
+    rawPrice: 45000,
+    pricePerSqFt: "₹36 / sq.ft",
+    listingType: "For Rent",
+    propertyType: "Apartment",
+    bedrooms: 2,
+    bathrooms: 2,
+    area: 1250,
+    parking: 1,
+    floor: "14th Floor (out of 28)",
+    facing: "North-East",
+    furnishing: "Fully Furnished",
+    builtYear: 2023,
+    ownership: "Freehold",
+    verified: true,
+    featured: false,
+    status: "Published",
+    views: 980,
+    inquiriesCount: 19,
+    createdDate: "2026-02-18",
+    propertyId: "EH-HYD-4011",
+    agentId: "agent-4",
+    agent: {
+      id: "agent-4",
+      name: "Ananya Roy",
+      role: "Residential Consultant",
+      experience: "5+ Years",
+      rating: 4.9,
+      reviewCount: 29,
+      phone: "+91 98450 11223",
+      whatsapp: "+919845011223",
+      email: "ananya.roy@estatehub.com",
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80",
+      location: "Bangalore, Karnataka",
+      propertiesCount: 29
+    },
+    images: [
+      "https://images.unsplash.com/photo-1567496898669-ee935f5f647a?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80"
+    ],
+    description: "Fully furnished 2 BHK flat available for rent in Gachibowli, Hyderabad's IT Corridor. Close to Amazon, Microsoft, and Google campuses. Features smart TV, ACs in all rooms, washing machine, refrigerator, and 24/7 clubhouse access.",
+    amenities: [
+      "Modular Kitchen", "Lift", "Security", "Power Backup", "Gym", "Swimming Pool", "Parking", "Balcony"
+    ]
+  }
+];
+
+export const INITIAL_AGENTS = [
+  {
+    id: "agent-1",
+    name: "Rahul Sharma",
+    role: "Real Estate Consultant",
+    experience: "8+ Years",
+    rating: 4.8,
+    reviewCount: 38,
+    phone: "+91 98290 12345",
+    whatsapp: "+919829012345",
+    email: "rahul.sharma@estatehub.com",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80",
+    location: "Jaipur, Rajasthan",
+    propertiesCount: 42,
+    bio: "Passionate real estate consultant specializing in luxury residential apartments and heritage villas across Jaipur and Rajasthan. Over 8 years of proven track record helping buyers find their dream home with total transparency.",
+    reviews: [
+      { id: "r1", user: "Amit Singhania", rating: 5, date: "2026-01-15", comment: "Rahul helped us acquire our 3 BHK apartment in Jaipur with zero hassle. Professional and transparent!" },
+      { id: "r2", user: "Pooja Bansal", rating: 4.8, date: "2025-12-20", comment: "Excellent knowledge of local Jaipur micro-markets." }
+    ]
+  },
+  {
+    id: "agent-2",
+    name: "Priya Mehta",
+    role: "Luxury Property Specialist",
+    experience: "6+ Years",
+    rating: 4.9,
+    reviewCount: 44,
+    phone: "+91 98100 67890",
+    whatsapp: "+919810067890",
+    email: "priya.mehta@estatehub.com",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+    location: "Gurgaon, Haryana",
+    propertiesCount: 35,
+    bio: "Specializing in high-end villas, penthouses, and Golf Course Road gated communities in Gurgaon. Expert negotiator with corporate clients and NRI buyers.",
+    reviews: [
+      { id: "r3", user: "Siddharth Oberoi", rating: 5, date: "2026-02-02", comment: "Priya found us our dream villa in Sector 54. Truly top-tier service!" }
+    ]
+  },
+  {
+    id: "agent-3",
+    name: "Vikram Malhotra",
+    role: "Senior Real Estate Director",
+    experience: "10+ Years",
+    rating: 4.7,
+    reviewCount: 52,
+    phone: "+91 98200 45678",
+    whatsapp: "+919820045678",
+    email: "vikram.m@estatehub.com",
+    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80",
+    location: "Mumbai, Maharashtra",
+    propertiesCount: 58,
+    bio: "Over a decade of experience navigating Mumbai's premium real estate landscape, from Bandra sea-facing flats to South Mumbai penthouses.",
+    reviews: [
+      { id: "r4", user: "Karan Johar", rating: 4.7, date: "2026-01-28", comment: "Great insights into Mumbai redevelopment projects and sea view apartments." }
+    ]
+  },
+  {
+    id: "agent-4",
+    name: "Ananya Roy",
+    role: "Residential Consultant",
+    experience: "5+ Years",
+    rating: 4.9,
+    reviewCount: 29,
+    phone: "+91 98450 11223",
+    whatsapp: "+919845011223",
+    email: "ananya.roy@estatehub.com",
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80",
+    location: "Bangalore, Karnataka",
+    propertiesCount: 29,
+    bio: "Dedicated to IT professionals and families in Bangalore looking for gated communities in Indiranagar, Koramangala, and Whitefield.",
+    reviews: [
+      { id: "r5", user: "Deepak Nambiar", rating: 5, date: "2026-02-10", comment: "Super helpful and responsive throughout the entire documentation process." }
+    ]
+  },
+  {
+    id: "agent-5",
+    name: "Rajesh Verma",
+    role: "Commercial Property Advisor",
+    experience: "12+ Years",
+    rating: 4.8,
+    reviewCount: 61,
+    phone: "+91 98111 88990",
+    whatsapp: "+919811188990",
+    email: "rajesh.v@estatehub.com",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80",
+    location: "Delhi NCR",
+    propertiesCount: 64,
+    bio: "Commercial leasing and high-value residential advisory specialist across Delhi, Noida, and Gurgaon.",
+    reviews: [
+      { id: "r6", user: "Vikas Aggarwal", rating: 4.8, date: "2026-02-01", comment: "Closed our 15,000 sq.ft office lease smoothly." }
+    ]
+  },
+  {
+    id: "agent-6",
+    name: "Sneha Kapoor",
+    role: "Luxury Estates Specialist",
+    experience: "7+ Years",
+    rating: 4.9,
+    reviewCount: 31,
+    phone: "+91 98220 33445",
+    whatsapp: "+919822033445",
+    email: "sneha.kapoor@estatehub.com",
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+    location: "Pune, Maharashtra",
+    propertiesCount: 31,
+    bio: "Curating bespoke homes, townhouses, and villas in Pune's prime residential hubs like Koregaon Park, Kalyani Nagar, and Baner.",
+    reviews: [
+      { id: "r7", user: "Rohan Deshmukh", rating: 5, date: "2026-01-19", comment: "Sneha has an eye for aesthetic architectural spaces!" }
+    ]
+  }
+];
+
+export const INITIAL_INQUIRIES = [
+  {
+    id: "inq-101",
+    name: "Aarav Patel",
+    email: "aarav.p@gmail.com",
+    phone: "+91 98765 43210",
+    propertyId: "luxury-3-bhk-apartment-jaipur",
+    propertyTitle: "Luxury 3 BHK Apartment",
+    agentId: "agent-1",
+    agentName: "Rahul Sharma",
+    message: "Hi, I am interested in visiting this 3 BHK property in Malviya Nagar this weekend. Please confirm availability.",
+    date: "2026-02-22",
+    status: "New"
+  },
+  {
+    id: "inq-102",
+    name: "Meera Sen",
+    email: "meera.sen@outlook.com",
+    phone: "+91 98112 23344",
+    propertyId: "modern-villa-with-garden-gurgaon",
+    propertyTitle: "Modern Villa with Garden",
+    agentId: "agent-2",
+    agentName: "Priya Mehta",
+    message: "Could you share the floor plan and exact maintenance charges for this Gurgaon villa?",
+    date: "2026-02-21",
+    status: "Contacted"
+  },
+  {
+    id: "inq-103",
+    name: "Rohan Gupta",
+    email: "rohan.g@techcorp.com",
+    phone: "+91 99001 88776",
+    propertyId: "premium-2-bhk-apartment-mumbai",
+    propertyTitle: "Premium 2 BHK Apartment",
+    agentId: "agent-3",
+    agentName: "Vikram Malhotra",
+    message: "Looking for an immediate booking for this Bandra sea view apartment. Is price negotiable?",
+    date: "2026-02-20",
+    status: "Interested"
+  },
+  {
+    id: "inq-104",
+    name: "Kavita Rao",
+    email: "kavita.rao@yahoo.com",
+    phone: "+91 98440 99887",
+    propertyId: "spacious-family-home-bangalore",
+    propertyTitle: "Spacious Family Home",
+    agentId: "agent-4",
+    agentName: "Ananya Roy",
+    message: "We would like to inspect the terrace and parking area tomorrow evening.",
+    date: "2026-02-19",
+    status: "Converted"
+  },
+  {
+    id: "inq-105",
+    name: "Saurabh Sharma",
+    email: "saurabh@startup.io",
+    phone: "+91 98188 55443",
+    propertyId: "commercial-office-space-noida",
+    propertyTitle: "Commercial Office Space",
+    agentId: "agent-5",
+    agentName: "Rajesh Verma",
+    message: "Need lease agreement draft copy for Cyber Tech Park office space.",
+    date: "2026-02-15",
+    status: "Closed"
+  }
+];
+
+export const INITIAL_USERS = [
+  { id: "usr-1", name: "Rahul Sharma", email: "rahul.sharma@estatehub.com", phone: "+91 98290 12345", role: "Agent", properties: 42, status: "Active", joinedDate: "2024-03-12" },
+  { id: "usr-2", name: "Priya Mehta", email: "priya.mehta@estatehub.com", phone: "+91 98100 67890", role: "Agent", properties: 35, status: "Active", joinedDate: "2024-05-20" },
+  { id: "usr-3", name: "Suresh Singhal", email: "suresh.s@gmail.com", phone: "+91 98111 22233", role: "Owner", properties: 3, status: "Active", joinedDate: "2024-08-11" },
+  { id: "usr-4", name: "Vikram Malhotra", email: "vikram.m@estatehub.com", phone: "+91 98200 45678", role: "Agent", properties: 58, status: "Active", joinedDate: "2023-11-04" },
+  { id: "usr-5", name: "Sunita Kapoor", email: "sunita.k@gmail.com", phone: "+91 98777 66554", role: "Buyer", properties: 0, status: "Active", joinedDate: "2025-01-14" },
+  { id: "usr-6", name: "Admin Manager", email: "admin@estatehub.com", phone: "+91 98000 00000", role: "Admin", properties: 0, status: "Active", joinedDate: "2023-01-01" }
+];
+
+export const POPULAR_LOCATIONS = [
+  { name: "Jaipur", state: "Rajasthan", properties: "420+ Listings", image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=600&q=80" },
+  { name: "Delhi", state: "Delhi NCR", properties: "1,250+ Listings", image: "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=600&q=80" },
+  { name: "Mumbai", state: "Maharashtra", properties: "2,100+ Listings", image: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=600&q=80" },
+  { name: "Bangalore", state: "Karnataka", properties: "1,800+ Listings", image: "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=600&q=80" },
+  { name: "Gurgaon", state: "Haryana", properties: "950+ Listings", image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" },
+  { name: "Noida", state: "Uttar Pradesh", properties: "780+ Listings", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" }
+];
