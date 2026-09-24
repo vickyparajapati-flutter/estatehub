@@ -18,6 +18,40 @@ export default function PropertyDetailsPage() {
   const favorite = isFavorite(property.id);
   const comparing = isComparing(property.id);
 
+  // Dynamic Open Graph & Document Title update for WhatsApp / Social Link Sharing Preview
+  React.useEffect(() => {
+    if (property) {
+      document.title = `${property.title} - ${property.price} | EstateHub`;
+      
+      const setMetaTag = (propertyAttr, content) => {
+        let element = document.querySelector(`meta[property="${propertyAttr}"]`);
+        if (!element) {
+          element = document.createElement('meta');
+          element.setAttribute('property', propertyAttr);
+          document.head.appendChild(element);
+        }
+        element.setAttribute('content', content);
+      };
+
+      const setTwitterTag = (nameAttr, content) => {
+        let element = document.querySelector(`meta[name="${nameAttr}"]`);
+        if (!element) {
+          element = document.createElement('meta');
+          element.setAttribute('name', nameAttr);
+          document.head.appendChild(element);
+        }
+        element.setAttribute('content', content);
+      };
+
+      const img = property.images?.[0] || 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&h=630&q=80';
+      setMetaTag('og:title', `${property.title} - ${property.price}`);
+      setMetaTag('og:description', `${property.locality ? property.locality + ', ' : ''}${property.city}, ${property.state}. ${property.bedrooms} Beds, ${property.bathrooms} Baths, ${property.area} sq.ft.`);
+      setMetaTag('og:image', img);
+      setTwitterTag('twitter:title', `${property.title} - ${property.price}`);
+      setTwitterTag('twitter:image', img);
+    }
+  }, [property]);
+
   // Modal States
   const [selectedImage, setSelectedImage] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
